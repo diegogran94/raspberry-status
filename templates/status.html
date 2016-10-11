@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+</style>
+<table>
+  <tr>
+	<th>Cpu temp:</th>
+	<td>{{temp}}</td>
+  </tr>
+  <tr>
+	<th>Cpu freq(ARM):</th>
+	<td>{{freq_arm}}</td>
+  </tr>
+  <tr>
+	<th>Cpu freq(CORE):</th>
+	<td>{{freq_core}}</td>
+  </tr>
+  <tr>
+	<th>Cpu volt:</th>
+	<td>{{volt}}</td>
+  </tr>
+  <tr>
+	<th>Load average:</th>
+	<td>{{load}}</td>
+  </tr>
+  <tr>
+	<th>Total memory:</th>
+	<td>{{t_mem}}</td>
+  </tr>
+  <tr>
+	<th>Free memory:</th>
+	<td>{{f_mem}}</td>
+  </tr>
+</table>
+{% endblock %}
+
+
